@@ -12,7 +12,7 @@ export class ChuckNorrisComponent extends React.Component<IChuckNorrisProps> {
     render() {
         const {norris} = this.props;
         return (
-            <div>
+            <div className="tile-sizing">
                 <h1> {norris.joke} </h1>
                 <button onClick={this.props.buyJoke}
                     className="btn btn-success"> New Joke </button>
